@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Growth Wave Marketing | Digital Growth Agency</title>
+
+<meta name="description" content="Growth Wave Marketing helps businesses grow through digital marketing, paid advertising, social media and lead generation.">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050505;
+    color:#fff;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    padding:20px 0;
+    background:rgba(5,5,5,.72);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:900;
+    letter-spacing:-1px;
+}
+
+.logo span{
+    color:#9eff00;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    font-size:14px;
+    color:#b8b8b8;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#9eff00;
+}
+
+.nav-btn{
+    padding:11px 18px;
+    border:1px solid #9eff00;
+    border-radius:30px;
+    color:#9eff00;
+    font-size:13px;
+    font-weight:700;
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    padding:150px 0 90px;
+    overflow:hidden;
+}
+
+.hero:before{
+    content:"";
+    position:absolute;
+    width:600px;
+    height:600px;
+    background:#9eff00;
+    filter:blur(180px);
+    opacity:.12;
+    top:-200px;
+    right:-150px;
+    border-radius:50%;
+}
+
+.hero-content{
+    max-width:850px;
+    position:relative;
+    z-index:2;
+}
+
+.badge{
+    display:inline-flex;
+    padding:8px 15px;
+    border:1px solid rgba(158,255,0,.35);
+    border-radius:30px;
+    color:#9eff00;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:25px;
+    background:rgba(158,255,0,.05);
+}
+
+.hero h1{
+    font-size:clamp(48px,8vw,92px);
+    line-height:.98;
+    letter-spacing:-5px;
+    font-weight:900;
+    margin-bottom:30px;
+}
+
+.hero h1 span{
+    color:#9eff00;
+}
+
+.hero p{
+    max-width:650px;
+    color:#aaa;
+    font-size:18px;
+    margin-bottom:38px;
+}
+
+.tagline{
+    font-size:15px;
+    font-weight:600;
+    color:#fff;
+    border-left:3px solid #9eff00;
+    padding-left:15px;
+    margin-bottom:35px;
+    font-style:italic;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:15px 25px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:800;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#9eff00;
+    color:#050505;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 35px rgba(158,255,0,.2);
+}
+
+.btn-secondary{
+    border:1px solid #333;
+    color:#fff;
+}
+
+.btn-secondary:hover{
+    border-color:#9eff00;
+    color:#9eff00;
+}
+
+/* STATS */
+
+.stats{
+    padding:25px 0 70px;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    border-top:1px solid #222;
+    border-bottom:1px solid #222;
+}
+
+.stat{
+    padding:30px;
+    border-right:1px solid #222;
+}
+
+.stat:last-child{
+    border-right:none;
+}
+
+.stat h3{
+    font-size:35px;
+    color:#9eff00;
+}
+
+.stat p{
+    color:#777;
+    font-size:13px;
+}
+
+/* SECTIONS */
+
+section{
+    padding:110px 0;
+}
+
+.section-head{
+    max-width:700px;
+    margin-bottom:55px;
+}
+
+.eyebrow{
+    color:#9eff00;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:11px;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.section-head h2{
+    font-size:clamp(35px,5vw,58px);
+    line-height:1.05;
+    letter-spacing:-3px;
+}
+
+.section-head p{
+    color:#888;
+    margin-top:18px;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.card{
+    background:linear-gradient(145deg,#111,#090909);
+    border:1px solid #202020;
+    border-radius:16px;
+    padding:32px;
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+    border-color:rgba(158,255,0,.45);
+}
+
+.icon{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#151515;
+    border:1px solid #292929;
+    border-radius:12px;
+    margin-bottom:25px;
+    font-size:21px;
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#777;
+    font-size:14px;
+}
+
+/* INDUSTRIES */
+
+.industries{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.industry{
+    padding:13px 19px;
+    border:1px solid #282828;
+    border-radius:50px;
+    color:#aaa;
+    font-size:13px;
+    transition:.3s;
+}
+
+.industry:hover{
+    color:#9eff00;
+    border-color:#9eff00;
+}
+
+/* PROCESS */
+
+.process{
+    background:#090909;
+    border-top:1px solid #161616;
+    border-bottom:1px solid #161616;
+}
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.step{
+    padding:28px;
+    border:1px solid #222;
+    border-radius:14px;
+    background:#0d0d0d;
+}
+
+.step-number{
+    font-size:13px;
+    color:#9eff00;
+    font-weight:800;
+}
+
+.step h3{
+    margin:25px 0 10px;
+}
+
+.step p{
+    color:#777;
+    font-size:14px;
+}
+
+/* SAMPLE WORK */
+
+.work-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.work{
+    min-height:240px;
+    border-radius:16px;
+    border:1px solid #222;
+    background:linear-gradient(135deg,#151515,#080808);
+    padding:28px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+
+.work small{
+    color:#9eff00;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:10px;
+    font-weight:800;
+}
+
+.work h3{
+    margin-top:8px;
+    font-size:23px;
+}
+
+/* PRICING */
+
+.pricing{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.price-card{
+    padding:35px;
+    border:1px solid #242424;
+    border-radius:16px;
+    background:#0c0c0c;
+}
+
+.price-card.featured{
+    border-color:#9eff00;
+    position:relative;
+}
+
+.popular{
+    position:absolute;
+    top:-13px;
+    right:20px;
+    background:#9eff00;
+    color:#050505;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:10px;
+    font-weight:900;
+}
+
+.price-card h3{
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:38px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.price span{
+    color:#777;
+    font-size:13px;
+    font-weight:400;
+}
+
+.features{
+    list-style:none;
+    margin:25px 0;
+}
+
+.features li{
+    color:#888;
+    font-size:13px;
+    padding:8px 0;
+    border-bottom:1px solid #1c1c1c;
+}
+
+/* CTA */
+
+.cta{
+    text-align:center;
+    padding:120px 20px;
+    background:
+    radial-gradient(circle at center,rgba(158,255,0,.11),transparent 45%);
+}
+
+.cta h2{
+    font-size:clamp(40px,6vw,70px);
+    line-height:1;
+    letter-spacing:-3px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    color:#888;
+    max-width:600px;
+    margin:0 auto 30px;
+}
+
+/* FOOTER */
+
+footer{
+    border-top:1px solid #1d1d1d;
+    padding:35px 0;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer p{
+    color:#555;
+    font-size:12px;
+}
+
+.footer-links{
+    display:flex;
+    gap:20px;
+    color:#777;
+    font-size:12px;
+}
+
+/* EMAIL BUTTON */
+
+.email-button{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#9eff00;
+    color:#050505;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    z-index:999;
+    box-shadow:0 8px 30px rgba(0,0,0,.4);
+    transition:.3s;
+}
+
+.email-button:hover{
+    transform:scale(1.08);
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    nav{
+        display:none;
+    }
+
+    .nav-btn{
+        display:none;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stat:nth-child(2){
+        border-right:none;
+    }
+
+    .services,
+    .process-grid,
+    .work-grid,
+    .pricing{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        letter-spacing:-3px;
+    }
+
+    .footer-content{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+}
+
+@media(max-width:500px){
+
+    .hero{
+        padding-top:130px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat{
+        border-right:none;
+        border-bottom:1px solid #222;
+    }
+
+    .stat:last-child{
+        border-bottom:none;
+    }
+
+    section{
+        padding:80px 0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+<div class="container nav">
+
+<a href="#" class="logo">
+Growth Wave <span>Marketing</span>
+</a>
+
+<nav>
+<a href="#services">Services</a>
+<a href="#industries">Industries</a>
+<a href="#work">Work</a>
+<a href="#pricing">Pricing</a>
+</nav>
+
+<a href="#contact" class="nav-btn">Let's Talk</a>
+
+</div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<div class="badge">
+DIGITAL GROWTH AGENCY
+</div>
+
+<h1>
+Turn Attention Into
+<span>Growth.</span>
+</h1>
+
+<div class="tagline">
+“Business is war. It’s not just business… it’s personal!”
+</div>
+
+<p>
+Growth Wave Marketing helps ambitious businesses attract attention,
+generate qualified enquiries and build a stronger digital presence.
+</p>
+
+<div class="buttons">
+
+<a href="#contact" class="btn btn-primary">
+Start Growing →
+</a>
+
+<a href="#services" class="btn btn-secondary">
+Explore Services
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat">
+<h3>01</h3>
+<p>Clear Strategy</p>
+</div>
+
+<div class="stat">
+<h3>02</h3>
+<p>Targeted Campaigns</p>
+</div>
+
+<div class="stat">
+<h3>03</h3>
+<p>Creative Content</p>
+</div>
+
+<div class="stat">
+<h3>04</h3>
+<p>Continuous Optimisation</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">What We Do</div>
+
+<h2>
+Marketing built around
+your business goals.
+</h2>
+
+<p>
+From content to paid advertising, we build digital systems
+designed to connect your business with the right audience.
+</p>
+
+</div>
+
+
+<div class="services">
+
+<div class="card">
+<div class="icon">◉</div>
+<h3>Meta Advertising</h3>
+<p>
+Facebook and Instagram advertising campaigns designed
+to reach relevant audiences and generate enquiries.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">✦</div>
+<h3>Social Media</h3>
+<p>
+Strategic content, Reels and social media management
+to build a strong online presence.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">⌕</div>
+<h3>Google Advertising</h3>
+<p>
+Reach people actively searching for products and
+services related to your business.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">▶</div>
+<h3>Content & Reels</h3>
+<p>
+Short-form video concepts and creative content
+built to capture attention.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">↗</div>
+<h3>Lead Generation</h3>
+<p>
+Campaigns focused on generating enquiries through
+forms, calls and email.
+</p>
+</div>
+
+<div class="card">
+<div class="icon">◎</div>
+<h3>Growth Strategy</h3>
+<p>
+A practical marketing roadmap based on your audience,
+offer and business objectives.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- INDUSTRIES -->
+
+<section id="industries">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">Who We Help</div>
+
+<h2>
+Built for businesses
+ready to grow.
+</h2>
+
+</div>
+
+<div class="industries">
+
+<div class="industry">Gyms & Fitness</div>
+<div class="industry">Salons & Beauty</div>
+<div class="industry">Restaurants</div>
+<div class="industry">Coaching Institutes</div>
+<div class="industry">Real Estate</div>
+<div class="industry">Clinics</div>
+<div class="industry">Hotels</div>
+<div class="industry">Retail Stores</div>
+<div class="industry">Automotive</div>
+<div class="industry">Professional Services</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">Our Process</div>
+
+<h2>
+Simple process.
+Serious execution.
+</h2>
+
+</div>
+
+<div class="process-grid">
+
+<div class="step">
+<div class="step-number">01 — DISCOVER</div>
+<h3>Understand</h3>
+<p>
+We understand your business, offer, audience and goals.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">02 — STRATEGY</div>
+<h3>Plan</h3>
+<p>
+We create a practical marketing strategy around your goals.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">03 — EXECUTE</div>
+<h3>Launch</h3>
+<p>
+We launch content and campaigns designed for your audience.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">04 — OPTIMISE</div>
+<h3>Improve</h3>
+<p>
+We monitor performance and make data-driven improvements.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SAMPLE WORK -->
+
+<section id="work">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">Sample Projects</div>
+
+<h2>
+What our campaigns
+can look like.
+</h2>
+
+<p>
+These are demonstration concepts created to show our creative
+and strategic approach. They are not presented as real client results.
+</p>
+
+</div>
+
+
+<div class="work-grid">
+
+<div class="work">
+<small>Demo Project</small>
+<h3>Fitness Lead Campaign</h3>
+</div>
+
+<div class="work">
+<small>Demo Project</small>
+<h3>Salon Social Growth</h3>
+</div>
+
+<div class="work">
+<small>Demo Project</small>
+<h3>Restaurant Local Ads</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section id="pricing">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">Packages</div>
+
+<h2>
+Choose your growth plan.
+</h2>
+
+<p>
+Simple packages for businesses at different stages of growth.
+Advertising spend is separate.
+</p>
+
+</div>
+
+
+<div class="pricing">
+
+<div class="price-card">
+
+<h3>Starter</h3>
+
+<div class="price">
+₹5,000 <span>/ month</span>
+</div>
+
+<ul class="features">
+<li>Social Media Strategy</li>
+<li>8 Content Ideas</li>
+<li>4 Reels Concepts</li>
+<li>Basic Monthly Report</li>
+</ul>
+
+<a href="mailto:growthwavemarketing@gmail.com?subject=Starter%20Package%20Enquiry"
+class="btn btn-secondary">
+Get Started
+</a>
+
+</div>
+
+
+<div class="price-card featured">
+
+<div class="popular">
+POPULAR
+</div>
+
+<h3>Growth</h3>
+
+<div class="price">
+₹10,000 <span>/ month</span>
+</div>
+
+<ul class="features">
+<li>Social Media Strategy</li>
+<li>Content Planning</li>
+<li>Reels Concepts</li>
+<li>Meta Ads Management</li>
+<li>Lead Generation Strategy</li>
+<li>Monthly Reporting</li>
+</ul>
+
+<a href="mailto:growthwavemarketing@gmail.com?subject=Growth%20Package%20Enquiry"
+class="btn btn-primary">
+Get Started
+</a>
+
+</div>
+
+
+<div class="price-card">
+
+<h3>Scale</h3>
+
+<div class="price">
+₹20,000+ <span>/ month</span>
+</div>
+
+<ul class="features">
+<li>Advanced Strategy</li>
+<li>Content System</li>
+<li>Meta Ads</li>
+<li>Google Ads</li>
+<li>Lead Generation</li>
+<li>Performance Optimisation</li>
+</ul>
+
+<a href="mailto:growthwavemarketing@gmail.com?subject=Scale%20Package%20Enquiry"
+class="btn btn-secondary">
+Get Started
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="cta" id="contact">
+
+<div class="container">
+
+<div class="eyebrow">
+LET'S BUILD
+</div>
+
+<h2>
+Ready to make
+some noise?
+</h2>
+
+<p>
+Tell us about your business and what you want to achieve.
+Let's build a marketing plan around it.
+</p>
+
+<a
+href="mailto:growthwavemarketing@gmail.com?subject=New%20Business%20Enquiry"
+class="btn btn-primary">
+Email Us →
+</a>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-content">
+
+<p>
+© 2026 Growth Wave Marketing. All rights reserved.
+</p>
+
+<div class="footer-links">
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING EMAIL -->
+
+<a
+class="email-button"
+href="mailto:growthwavemarketing@gmail.com?subject=Growth%20Wave%20Marketing%20Enquiry"
+aria-label="Email Growth Wave Marketing">
+✉
+</a>
+
+</body>
+  </html>
